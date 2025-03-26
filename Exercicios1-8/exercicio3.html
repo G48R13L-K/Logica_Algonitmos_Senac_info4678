@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+
+    Insira o funcionario:</br>
+    <input type="text" id="nomeFuncionario"></br>
+    </br>
+    Salário do funcionario:</br>
+    <input type="text" id="salarioFuncionario"></br>
+    <button onclick="exibeDados()">Entrar</button>
+
+
+
+    <body>
+        
+
+        <script>
+            function exibeDados(){
+                var salarioFuncionario=document.getElementById("salarioFuncionario").value;
+                var nomeFuncionario=document.getElementById("nomeFuncionario").value;
+                 alert("O funcionario(a) "+nomeFuncionario+", tem um salário de R$"+salarioFuncionario+" em Junho.");   
+            }
+            
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

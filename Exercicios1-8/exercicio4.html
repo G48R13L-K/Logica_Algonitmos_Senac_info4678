@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+
+
+
+
+    <body>
+        Digite os numeros para somar:</br>
+        <input type="int" id="numero1">+<Input type="int" id="numero2">
+
+        
+        <button onclick="exibeSoma()">somar</button>
+
+        <script>
+            function exibeSoma(){
+
+                var numero1=parseInt(document.getElementById("numero1").value);
+                var numero2=parseInt(document.getElementById("numero2").value);
+                var resultado=numero1+numero2
+                alert("A soma de "+numero1+" e "+numero2+" é igual a "+resultado);
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

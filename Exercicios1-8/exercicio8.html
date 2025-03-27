@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+
+
+
+
+    <body>
+        Digite uma distancia em metros:
+        <input type="text" id="metros">
+
+        
+        <button onclick="exibeInformacoes()">Confirmar</button>
+
+        <script>
+            function exibeInformacoes(){
+
+                var metros=parseFloat(document.getElementById("metros").value);
+                var Km=metros/1000
+                var Hm=metros/100
+                var Dam=metros/10
+                var dm=metros*10
+                var cm=metros*100
+                var mm=metros*1000
+
+                alert("A distância de "+metros+"m corresponde a: "+Km+"Km, "+Hm+"Hm, "+Dam+"Dam, "+dm+"dm, "+cm+"cm, "+mm+"mm.");
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

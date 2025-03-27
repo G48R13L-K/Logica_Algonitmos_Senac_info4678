@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+
+
+
+
+    <body>
+        Nota 1:
+        <input type="int" id="nota1"></br>
+        </br>
+        Nota 2
+        <Input type="int" id="nota2"></br>
+        </br>
+        
+        <button onclick="exibeMedia()">Calcular</button>
+
+        <script>
+            function exibeMedia(){
+
+                var nota1=parseFloat(document.getElementById("nota1").value);
+                var nota2=parseFloat(document.getElementById("nota2").value);
+                var resultado=(nota1+nota2)/2
+                alert("A média entre "+nota1+" e "+nota2+" é igual a "+resultado);
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+
+
+
+
+    <body>
+        Para saber a quantidade de tinta necessaria.</br></br>
+        Informe a altura da parede:  
+        <input type="int" id="altura"></br>
+        </br>
+        Informe a largura da parede:
+        <input type="int" id="largura">
+        </br>
+        <button onclick="exibeCalculo()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeCalculo(){
+                var altura=document.getElementById("altura").value
+                var largura=document.getElementById("largura").value
+                var area=altura*largura
+                var tinta=area/2
+                alert("A area a ser pintada é de "+area+"m², serão necessarios "+tinta+"L de tinta.")
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

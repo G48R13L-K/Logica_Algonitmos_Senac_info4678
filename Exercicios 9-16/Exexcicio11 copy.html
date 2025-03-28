@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+
+
+
+
+    <body>
+        Para saber o delta.</br></br>
+        Informe o A:  
+        <input type="int" id="a"></br>
+        </br>
+        Informe o B:
+        <input type="int" id="b"></br>
+        </br>
+        Informe o C:
+        <input type="int" id="c">
+        </br>
+        <button onclick="exibeCalculo()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeCalculo(){
+                var a=document.getElementById("a").value
+                var b=document.getElementById("b").value
+                var c=document.getElementById("c").value
+                var delta=(b*b)-4*a*c
+                //calculo de delta
+                alert("O valor de delta é "+delta)
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+
+
+
+
+    <body>
+        Informe abaixo o valor que possui para comprar dólares.</br>
+        <input type="Float" id="reais"></br>
+        </br>
+        <button onclick="exibeConversao()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeConversao(){
+                var reais = document.getElementById("reais").value
+                dolares=(reais/5.76).toFixed(2)//definir a quantidade de casas depois da virgula
+                alert("Você pode comprar "+dolares+".")
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+</head>
+
+
+
+
+    <body>
+        Quantos dias foram trabalhados pelo funcionario.</br>
+        </br>
+        <input type="Float" id="dias"></br>
+        <button onclick="exibeCalculo()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeCalculo(){
+                var dias=document.getElementById("dias").value
+                var horasTrabalhadas=dias*8
+                var salario=horasTrabalhadas*25
+                alert("O salário do funcionario é "+salario+".")
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

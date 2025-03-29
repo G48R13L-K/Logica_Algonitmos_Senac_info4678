@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+
+
+
+
+    <body>
+        Informe o salário do funcionario para calcular seu aumento.</br>
+        <input type="Float" id="salarioFuncionario"></br>
+        </br>
+        <button onclick="exibeCalculo()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeCalculo(){
+                
+                var salarioFuncionario=parseFloat(document.getElementById("salarioFuncionario").value)
+                var aumento=(salarioFuncionario*15)/100
+                var novoSalario=salarioFuncionario+aumento
+                alert("O novo salário do funcionario será de "+novoSalario+".")
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

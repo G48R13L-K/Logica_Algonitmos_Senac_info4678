@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+
+
+
+
+    <body>
+        Informe os kilometros percorridos pelo carro.</br>
+        <input type="Float" id="km"></br>
+        </br>
+        Informe a quantidade de dias que o carro esteve alugado.</br>
+        <input type="int"   id="dias"></br>
+        </br>
+        <button onclick="exibeCalculo()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeCalculo(){
+                
+                var km=parseFloat(document.getElementById("km").value)
+                var dias=parseFloat(document.getElementById("dias").value)
+                var valorDias=dias*90
+                var valorKM=km*0.20
+                var valorTotal=valorDias+valorKM
+                alert("O valor total a pagar pelo aluguel é "+valorTotal+".")
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

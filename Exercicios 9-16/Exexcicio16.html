@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16</title>
+</head>
+
+
+
+
+    <body>
+        Quantos cigarros você fuma por dia?</br>
+        <input type="int" id="cigarrosDiarios"></br>
+        </br>
+        A quantos anos você já fuma?</br>
+        <input type="int"   id="anosPerdidos"></br>
+        </br>
+        <button onclick="exibeCalculo()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeCalculo(){
+                
+                var cigarrosDiarios=parseFloat(document.getElementById("cigarrosDiarios").value)
+                var anosPerdidos=parseFloat(document.getElementById("anosPerdidos").value)
+                var minutosPerdidos=cigarrosDiarios*10
+                var dia=minutosPerdidos/1440
+                var diasPerdidos=(dia*(anosPerdidos*365)).toFixed(2)
+                
+                alert("Você perderá "+diasPerdidos+" de vida.")
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

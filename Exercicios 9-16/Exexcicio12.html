@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+
+
+
+
+    <body>
+        Informe o valor do produto para calcular o valor na promoção.</br>
+        <input type="Float" id="valor"></br>
+        </br>
+        <button onclick="exibeCalculo()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeCalculo(){
+                var valor=document.getElementById("valor").value
+                var desconto=(valor*5)/100
+                var valorPromo=valor-desconto
+                alert("O valor do produto na promoçâo é "+valorPromo+".")
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+    <body>
+        <script>
+            
+            var linha1 = lines[0].split(" ");
+            var linha2 = lines[1].split(" ");
+            var x1 = parseFloat(linha1[0]);
+            var y1 = parseFloat(linha1[1]);
+            var x2 = parseFloat(linha2[0]);
+            var y2 = parseFloat(linha2[1]);
+            //Math.pow() serve para fazer a potencia dos numeros
+            var x = Math.pow(x2-x1,2);
+            var y = Math.pow(y2-y1,2);
+            //Math.sqrt() serve para tirar a raiz quadrada
+            var distancia = Math.sqrt(x+y);
+            console.log(distancia.toFixed(4));
+
+        
+        </script>
+
+
+    
+    </body>
+</html>

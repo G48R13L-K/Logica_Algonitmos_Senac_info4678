@@ -6,20 +6,20 @@
     <title>Exercicio 20</title>
 </head>
     <body>
-        Digite um ano:
+        Digite um numero:
         </br>
-       <input type="text"  id="ano" value="">
-       <button onclick="verificarBissexto()"> Clique aqui </button>
+       <input type="text"  id="numero" value="">
+       <button onclick="verificarPar()"> Clique aqui </button>
         
         <script>
-            function verificarBissexto(){
-                var ano=Number(document.getElementById("ano").value)
+            function verificarPar(){
+                var numero=Number(document.getElementById("numero").value)
                 
-                    if (ano%4==0 && ano%400==0) {
-                        alert("O ano "+ano+" é bissexto.");
+                    if (numero%2==0) {
+                        alert("O número "+numero+" é par.");
                         
                     }else{
-                        alert("O ano "+ano+" não é bissexto.");
+                        alert("O número "+numero+" é impar.");
                     }
             }            
                  

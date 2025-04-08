@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+    <body>
+        Insira o nome do aluno:</br>
+        <input type="text"  id="aluno" value=""></br>
+        Insira a primeira nota:</br>
+        <input type="text" id="primeiraNota" value=""></br>
+        Insira a segunda nota:</br>
+        <input type="text" id="segundaNota" value=""></br>
+    </br>
+       <button onclick="calcularMedia()"> Clique aqui </button>
+        
+        <script>
+            function calcularMedia(){
+                var aluno=document.getElementById("aluno").value;
+                var primeiraNota= Number(document.getElementById("primeiraNota").value);
+                var segundaNota=Number(document.getElementById("segundaNota").value);
+                
+                var media=(primeiraNota+segundaNota)/2;
+
+                    if (media<7) {
+                        
+                        alert("O aluno "+aluno+" teve média de: "+media+".\n Aluno foi reprovado.");
+                        
+                    }else{
+                        alert("O aluno "+aluno+" teve média de: "+media+".\n Aluno foi aprovado!!!");
+                    }
+            }            
+                 
+        
+        </script>
+
+
+    
+    </body>
+</html>

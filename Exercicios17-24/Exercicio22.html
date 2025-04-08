@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+    <body>
+        Insira seu ano para a verificação de idade:
+        </br>
+       <input type="text"  id=anoNascimento value="">
+       <button onclick="verificarIdade()"> Clique aqui </button>
+        
+        <script>
+            function verificarIdade(){
+                var anoNascimento=Number(document.getElementById("anoNascimento").value)
+                var idade=2025-anoNascimento
+
+                    if (idade < 18) {
+                        var faltamAnos=18-idade
+                        alert("Faltam "+faltamAnos+" ano(s) para o alistamento militar.");
+                        
+                    }else{
+                        var passouAnos=idade-18
+                        alert("Fazem "+passouAnos+" ano(s) desde seu alistamento.");
+                    }
+            }            
+                 
+        
+        </script>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 25</title>
+</head>
+    <body>
+        Informe o valor da reta A:</br>
+        <input type="text" id="a" value=""></br>
+        Informe o valor da reta B:</br>
+        <input type="text" id="b" value=""></br>
+        Informe o valor da reta C:</br>
+        <input type="text" id="c" value=""></br>
+        <button onclick="verificarTriangulo()"> Clique aqui </button>
+        
+        <script>
+            function verificarTriangulo(){
+                var a=Number(document.getElementById("a").value);
+                var b=Number(document.getElementById("b").value);
+                var c=Number(document.getElementById("c").value);
+                
+                    if(a<b+c){
+                        if(b<a+c){
+                            if(c<a+b){
+                        alert("É possivel formar um triângulo!")
+                            }else{
+                                alert("Não é possivel formar um triângulo.")
+                            }
+                        }else{
+                            alert("Não é possivel formar um triângulo.")
+                        }
+                    }else{
+                        alert("Não é possivel formar um triângulo.")
+                      
+                    }
+                    
+                     
+                }
+                 
+                    
+                    
+                        
+                 
+        
+        </script>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 24</title>
+</head>
+    <body>
+        Informe a distancia que deseja percorrer (em Km):</br>
+        <input type="text" id="distanciaPretendida" value=""></br>
+        
+        <button onclick="calcularValor()"> Clique aqui </button>
+        
+        <script>
+            function calcularValor(){
+                var distanciaPretendida=parseFloat(document.getElementById("distanciaPretendida").value);
+                
+                    if(distanciaPretendida<=200){
+                        var valorCobrado=distanciaPretendida*0.5
+
+                    }else{
+                        var valorCobrado=distanciaPretendida*0.45
+                      
+                        }
+                    
+                    alert("O valor pelo da passagem para a distância de "+distanciaPretendida.toFixed(2)+"Km é de R$"+valorCobrado.toFixed(2)) 
+                }
+                 
+                    
+                    
+                        
+                 
+        
+        </script>
+
+
+    
+    </body>
+</html>

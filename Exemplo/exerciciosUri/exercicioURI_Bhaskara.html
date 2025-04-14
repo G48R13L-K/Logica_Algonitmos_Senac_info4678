@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritmos</title>
+</head>
+    <body>
+        <script>
+        var linha = lines[0].split(" ");
+        var a = parseFloat(linha[0]);
+        var b = parseFloat(linha[1]);
+        var c = parseFloat(linha[2]);
+        
+        if (a!==0){
+        var d = ((b*b)-4*(a*c));
+            if (d>0){
+                var raiz1 = (-b+Math.sqrt(d))/(2*a);
+                var raiz2 = (-b-Math.sqrt(d))/(2*a);
+                console.log("R1 = "+raiz1.toFixed(5)+"\nR2 = "+raiz2.toFixed(5));
+        }else{
+            console.log("Impossivel calcular");    
+        }
+    }else{
+            console.log("Impossivel calcular");  
+        }
+        
+
+        
+
+       
+        
+       
+
+
+        
+        </script>
+
+
+    
+    </body>
+</html>

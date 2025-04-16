@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritmos</title>
+</head>
+    <body>
+        <script>
+        
+        var linha=lines[0].split(" ");
+        var n1=parseFloat(linha[0]);
+        var n2=parseFloat(linha[1]);
+        var n3=parseFloat(linha[2]);    
+        var n4=parseFloat(linha[3]);
+        
+        var media1=parseFloat(n1*2);
+        var media2=parseFloat(n2*3);
+        var media3=parseFloat(n3*4);
+        var media4=parseFloat(n4*1);
+        var mediaTotal=(media1+media2+media3+media4)/10;
+
+        if (mediaTotal>=7){
+            console.log("Media: "+mediaTotal.toFixed(1)+"\nAluno aprovado.");
+        }else if(mediaTotal<5){
+            console.log("Media: "+mediaTotal.toFixed(1)+"\nAluno reprovado.");
+        }else{
+            console.log("Media: "+mediaTotal.toFixed(1)+"\nAluno em exame.");
+            var exame=parseFloat(lines[1]);
+            console.log("Nota do exame: "+exame.toFixed(1));
+            var mediaTotal=(exame+mediaTotal)/2;
+
+            if(mediaTotal>=5){
+                console.log("Aluno aprovado.\nMedia final: "+mediaTotal.toFixed(1));
+            }else{
+                console.log("Aluno reprovado.\nMedia final: "+mediaTotal.toFixed(1));
+            }
+        }
+
+        
+       
+        </script>
+
+
+    
+    </body>
+</html>

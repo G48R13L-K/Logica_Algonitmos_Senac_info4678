@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritmos</title>
+</head>
+    <body>
+        <script>
+        
+        var linha=lines[0].split(" ");
+        var codigoLanche=parseInt(linha[0]);
+        var quantidadeLanche=parseInt(linha[1]);
+        if (codigoLanche==1){
+            var totalPagar=4*quantidadeLanche;
+        }
+        else if(codigoLanche==2){
+            var totalPagar=4.5*quantidadeLanche;
+        }
+        else if(codigoLanche==3){
+            var totalPagar=5*quantidadeLanche;
+        }
+        else if(codigoLanche==4){
+            var totalPagar=2*quantidadeLanche;
+        }
+        else if(codigoLanche==5){
+            var totalPagar=1.5*quantidadeLanche;
+        }
+        console.log("Total: R$ "+totalPagar.toFixed(2));
+
+        
+       
+        </script>
+
+
+    
+    </body>
+</html>

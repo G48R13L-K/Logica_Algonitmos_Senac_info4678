@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 29</title>
+</head>
+
+
+
+
+    <body>
+        Informe o nome do funcionario.</br>
+        <input type="text" id="nomeFuncionario" value=""></br>
+        Informe o salário do funcionario.</br>
+        <input type="text" id="salarioFuncionario" value=""></br>
+        A quantos anos ele trabalha na empresa.</br>
+        <input type="text" id="anosTrabalho" value=""></br>
+        </br>
+        <button onclick="exibeCalculo()">Confirmar</button>
+
+        
+
+        <script>
+            function exibeCalculo(){
+                var nomeFuncionario=document.getElementById("nomeFuncionario").value
+                var salarioFuncionario=parseFloat(document.getElementById("salarioFuncionario").value)
+                var anosTrabalho=parseInt(document.getElementById("anosTrabalho").value)
+
+                if(anosTrabalho<3){
+                    aumento=(salarioFuncionario*3)/100
+                    salarioNovo=salarioFuncionario+aumento
+                    alert("O novo salário de "+nomeFuncionario+" é R$"+salarioNovo)
+                }else if(anosTrabalho<10){
+                    aumento=(salarioFuncionario*12.5)/100
+                    salarioNovo=salarioFuncionario+aumento
+                    alert("O novo salário de "+nomeFuncionario+" é R$"+salarioNovo)
+                }else{
+                    aumento=(salarioFuncionario*20)/100
+                    salarioNovo=salarioFuncionario+aumento
+                    alert("O novo salário de "+nomeFuncionario+" é R$"+salarioNovo)
+                }
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

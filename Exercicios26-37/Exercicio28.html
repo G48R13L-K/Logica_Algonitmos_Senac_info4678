@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 28</title>
+</head>
+    <body>
+        Digite a largura do terreno:
+        </br>
+       <input type="text"  id="largura" value=""></br>
+       Digite o comprimento do terreno:
+       </br>
+       <input type="text" id="comprimento" value=""></br>
+       <button onclick="verificarArea()"> Clique aqui </button>
+        
+        <script>
+            function verificarArea(){
+            
+                var largura=parseFloat(document.getElementById("largura").value)
+                var comprimento=parseFloat(document.getElementById("comprimento").value)
+                var area=largura*comprimento
+
+                if (area<100){
+                    alert("TERRENO POPULAR")
+                }else if(area<=500){
+                    alert("TERRENO MASTER")
+                }else{
+                    alert("TERRENO VIP")
+                }
+
+            }
+        </script>
+
+
+    
+    </body>
+</html>

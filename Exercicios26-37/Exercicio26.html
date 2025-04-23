@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 26</title>
+</head>
+    <body>
+        Digite o primeiro número:
+        </br>
+       <input type="text"  id="numero1" value=""></br>
+       Digite o segundo número:
+       </br>
+       <input type="text" id="numero2" value=""></br>
+       <button onclick="verificarMaior()"> Clique aqui </button>
+        
+        <script>
+            function verificarMaior(){
+            
+                var numero1=parseInt(document.getElementById("numero1").value)
+                var numero2=parseInt(document.getElementById("numero2").value)
+
+                if(numero1>numero2){
+                    alert("Primeiro valor é o maior.")
+                }else if(numero2>numero1){
+                    alert("Segundo valor é o maior.")
+                }else{
+                    alert("Não existe valor maior, os dois são iguais.")
+                }
+            }
+        </script>
+
+
+    
+    </body>
+</html>

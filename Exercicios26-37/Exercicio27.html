@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 27</title>
+</head>
+    <body>
+        Digite a primeira nota:
+        </br>
+       <input type="text"  id="primeiraNota" value=""></br>
+       Digite a segunda nota:
+       </br>
+       <input type="text" id="segundaNota" value=""></br>
+       <button onclick="verificarMedia()"> Clique aqui </button>
+        
+        <script>
+            function verificarMedia(){
+            
+                var primeiraNota=parseFloat(document.getElementById("primeiraNota").value)
+                var segundaNota=parseFloat(document.getElementById("segundaNota").value)
+                var media=(primeiraNota+segundaNota)/2
+
+                if (media<4.9){
+                    alert("REPROVADO!")
+                }else if(media<7){
+                    alert("RECUPERAÇÃO!")
+                }else{
+                    alert("APROVADO!")
+                }
+
+            }
+        </script>
+
+
+    
+    </body>
+</html>

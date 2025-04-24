@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 32</title>
+</head>
+
+
+
+
+    <body>
+        Tente adivinhar o número sorteado.
+        <input type="text" id="tentativa" value="">        
+        <button onclick="checkTentativa()">Confirmar</button>
+
+        
+
+        <script>
+            var numero=Math.floor((Math.random()*6)+0)
+            function checkTentativa(){
+                var tentativa=parseInt(document.getElementById("tentativa").value)
+                if(tentativa<numero){
+                    alert("Quase, o número sorteado é maior que "+tentativa)
+                }else if(tentativa>numero){
+                    alert("Quase, o número sorteado é menor que "+tentativa)
+                }else{
+                    alert("Acertou em cheio!!! Número sorteado é "+tentativa)
+                }
+                
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

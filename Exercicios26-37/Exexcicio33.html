@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 33</title>
+</head>
+
+
+
+
+    <body>
+        Valor da casa desejada:</br>
+        <input type="text" id="valorCasa" value=""></br>
+        Salario do comprador:</br>
+        <input type="text" id="salarioComprador" value=""></br> 
+        Em quantos anos pretende pagar:</br>
+        <input type="text" id="anosPraPagar" value=""></br>       
+        <button onclick="validarEmprestimo()">Confirmar</button>
+
+        
+
+        <script>
+            function validarEmprestimo(){
+                var valorCasa=parseFloat(document.getElementById("valorCasa").value)
+                var salarioComprador=parseFloat(document.getElementById("salarioComprador").value)
+                var anosPraPagar=parseInt(document.getElementById("anosPraPagar").value)
+                var maximoParcela=(salarioComprador*30)/100
+                var quantidadeParcelas=anosPraPagar*12
+                var valorParcela=(quantidadeParcelas/valorCasa)
+
+                if (valorParcela<maximoParcela){
+                    alert()
+                }
+
+            }
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

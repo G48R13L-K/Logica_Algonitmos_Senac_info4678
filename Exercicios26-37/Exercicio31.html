@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 31</title>
+</head>
+    <body>
+        ----Numero 1=Pedra----Numero 2=Papel----Numero 3=Tesoura----</br>
+             =JOGADOR1=</br>
+        Pedra-Papel-Tessoura</br>
+        <input type="text" id="jogador1" value=""></br>
+        </br>
+             =JOGADOR2=</br>
+        Pedra-Papel-Tessoura</br>
+        <input type="text" id="jogador2" value=""></br>
+        <button onclick="jogar()">JOGAR</button>        
+        <script>
+            function jogar(){
+                var jogador1=parseInt(document.getElementById("jogador1").value)
+                var jogador2=parseInt(document.getElementById("jogador2").value)
+                if(jogador1=>1){
+                    if(jogador1<=3){
+                        var condicao1=true
+                    }else{
+                    alert("_Jogador1_ Digite um número válido.")
+                    }
+                }
+                if(jogador2=>1){
+                    if(jogador2<=3){
+                    var condicao2=true    
+                    }else{
+                    alert("_Jogador2_ Digite um númeor válido.")
+                    }
+                }
+                if (condicao1==true && condicao2==true){
+                    if(jogador1<jogador2){
+                        if(jogador1<2){
+                            alert("Jogador2 ganhou!\nPapel ganha de Pedra.")
+                        }
+                        if(jogador1>1){
+                            alert("Jogador2 ganhou!\nTessoura ganha de Papel.")
+                        }
+                    }else if(jogador1==3 && jogador2==1){
+                        alert("Jogador2 ganhou!\nPedra ganha de Tessoura.")
+                    }else if(jogador2<jogador1){
+                        if(jogador2<2){
+                            alert("Jogador1 ganhou!\nPapel ganha de Pedra.")
+                        }
+                        if(jogador2>1){
+                            alert("Jogador1 ganhou!\nTessoura ganha de Papel.")
+                        }
+                    }else if(jogador2==3 && jogador1==1){
+                        alert("Jogador1 ganhou!\nPedra ganha de Tessoura.")
+                    }
+                    if(jogador1==jogador2){
+                        if(jogador1==1){
+                            alert("Empate!\nAmbos jogaram Pedra.")
+                        }else if(jogador1==2){
+                            alert("Empate!\nAmbos jogaram Papel.")
+                        }else{
+                            alert("Empate!\nAmbos jogaram Tessoura.")
+                        }
+                    }
+                }
+            }
+        </script>
+
+
+    
+    </body>
+</html>

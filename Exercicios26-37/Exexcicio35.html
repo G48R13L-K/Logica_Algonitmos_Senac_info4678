@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 35</title>
+</head>
+
+
+
+
+    <body>
+       ====ALUGUEIS VEICULOS====</br>
+    </br>
+        Possuimos 2 categorias de carros para aluguel:</br>
+        1-Carro popular</br>
+        2-Carro de luxo</br>
+    </br>
+        Qual categoria de carro foi alugado?(1 ou 2)</br>
+        <input type="text" id="categoriaCarro" value=""></br>
+    </br>
+        Quantos dias de aluguel?</br>
+        <input type="text" id="dias" value=""></br>
+    </br>
+        Qauntos Km foram percorridos?</br>
+        <input type="text" id="km" value=""></br>
+    </br>
+
+        <button onclick="calcularAluguel()">Calcular</button>
+
+        
+
+        <script>
+            function calcularAluguel(){
+                var categoriaCarro=document.getElementById("categoriaCarro").value
+                var dias=parseInt(document.getElementById("dias").value)
+                var km=parseFloat(document.getElementById("km").value)
+
+                if(categoriaCarro>2 || categoriaCarro<1){
+                    alert("ERRO!!!\n Insira uma categoria correspondente(1 ou 2).")
+                }else if(categoriaCarro==1){
+                    if(km<=100){
+                        var precoKm=km*0.20
+                        var valorCarroDia=dias*90
+                        var valorTotal=precoKm+valorCarroDia
+                        alert("Valor total: R$"+valorTotal)
+                    }else{
+                        var precoKm=km*0.10
+                        valorCarroDia=dias*90
+                        var valorTotal=precoKm+valorCarroDia
+                        alert("Valor total: R$"+valorTotal)
+                    }
+                }else{
+                    if(km<=200){
+                        var precoKm=km*0.30
+                        valorCarroDia=dias*150
+                        var valorTotal=precoKm+valorCarroDia
+                        alert("Valor total: R$"+valorTotal)   
+                    }else{
+                        var precoKm=km*0.25
+                        valorCarroDia=dias*150
+                        var valorTotal=precoKm+valorCarroDia
+                        alert("Valor total: R$"+valorTotal)
+                    }
+                }
+              
+
+               
+        }
+  
+        </script>
+
+
+    
+    </body>
+</html>

@@ -27,14 +27,18 @@
                 var anosPraPagar=parseInt(document.getElementById("anosPraPagar").value)
                 var maximoParcela=(salarioComprador*30)/100
                 var quantidadeParcelas=anosPraPagar*12
-                var valorParcela=(quantidadeParcelas/valorCasa)
+                var valorParcela=(valorCasa/quantidadeParcelas)
 
                 if (valorParcela<maximoParcela){
-                    alert()
-                }
+                    alert("Emprestimo aprovado no valor de "+valorCasa.toFixed(2)+", em "+quantidadeParcelas+" vezes no valor de "+valorParcela.toFixed(2)+".");
+                }else if(valorParcela>maximoParcela){
+                    alert("Emprestimo negado, valor das parcelas extrapola o limite de 30% da renda do comprador.")
+                    var numeroMinParcelas=Math.ceil(valorCasa/maximoParcela)
+                    var anosPossiveis=Math.ceil(numeroMinParcelas/12)
+                    alert("Para o emprestimo ser aprovado será necessario ser feito em "+anosPossiveis+" anos.")
 
             }
-
+        }
   
         </script>
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 36</title>
+</head>
+
+
+
+
+    <body>
+       ====VIDA SAUDAVEL====</br>
+    </br>
+        Quantas horas de atividades físicas você fez esse mês? </br>
+        <input type="text" id="horasMes" value=""></br>
+    </br>
+        <button onclick="calcularPontos()">Calcular Pontos</button>
+
+        
+
+        <script>
+            function calcularPontos(){
+                var horasMes=document.getElementById("horasMes").value
+
+                if(horasMes<=10){
+                    var pontos=horasMes*2
+                    var dinheiro=pontos*0.05
+                    alert("Você teve "+pontos+" pontos esse mês, conseguiu ganhar R$"+dinheiro.toFixed(2))
+                }else if(horasMes<=20){
+                    var pontos=horasMes*5
+                    var dinheiro=pontos*0.05
+                    alert("Você teve "+pontos+" pontos esse mês, conseguiu ganhar R$"+dinheiro.toFixed(2))
+                }else{
+                    var pontos=horasMes*10
+                    var dinheiro=pontos*0.05
+                    alert("Você teve "+pontos+" pontos esse mês, conseguiu ganhar R$"+dinheiro.toFixed(2))
+                }
+                
+
+               
+        }
+  
+        </script>
+
+
+    
+    </body>
+</html>

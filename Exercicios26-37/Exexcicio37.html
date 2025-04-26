@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 37</title>
+</head>
+
+
+
+
+    <body>
+    </br>
+        Qual o salário atual do funcionário(a)?</br>
+        <input type="text" id="salario" value=""></br>
+    </br>
+        Qual o gênero do funcionário(a)?(f ou m)</br>
+        <input type="text" id="genero" value=""></br>
+    </br>
+        Quantos anos o funcionário(a) trabalha na empresa?</br>
+        <input type="text" id="anos" value=""></br>
+    </br>
+        <button onclick="calcularAumento()">Calcular Pontos</button>
+
+        
+
+        <script>
+            function calcularAumento(){
+                var salario=parseFloat(document.getElementById("salario").value)
+                var genero=document.getElementById("genero").value
+                var anos=parseInt(document.getElementById("anos").value)
+
+                if(genero!="f" && genero!="m"){
+                    alert("              ERRO!!!\nInsira um gênero valido(F ou M).")
+                }else{
+                    if(genero=="f"){
+                        if(anos<15){
+                            var aumento=(salario*5)/100
+                            var salarioNovo=salario+aumento
+                            alert("O novo salário da funcionaria é R$"+salarioNovo.toFixed(2))
+                        }else if(anos<20){
+                            var aumento=(salario*12)/100
+                            var salarioNovo=salario+aumento
+                            alert("O novo salário da funcionaria é R$"+salarioNovo.toFixed(2))
+                        }else{
+                            var aumento=(salario*23)/100
+                            var salarioNovo=salario+aumento
+                            alert("O novo salário da funcionaria é R$"+salarioNovo.toFixed(2))
+                        }
+                    }else{
+                        if(anos<20){
+                            var aumento=(salario*3)/100
+                            var salarioNovo=salario+aumento
+                            alert("O novo salário da funcionario é R$"+salarioNovo.toFixed(2))
+                        }else if(anos<30){
+                            var aumento=(salario*13)/100
+                            var salarioNovo=salario+aumento
+                            alert("O novo salário da funcionario é R$"+salarioNovo.toFixed(2))
+                        }else{
+                            var aumento=(salario*25)/100
+                            var salarioNovo=salario+aumento
+                            alert("O novo salário da funcionari0 é R$"+salarioNovo.toFixed(2))
+                        }
+                    }
+                }
+
+               
+        }
+  
+        </script>
+
+
+    
+    </body>
+</html>

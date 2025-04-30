@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritmos</title>
+</head>
+    <body>
+        <script>
+        var linha = lines[0].split(" ");
+        var ladoA=parseFloat(linha[0]);
+        var ladoB=parseFloat(linha[1]);
+        var ladoC=parseFloat(linha[2]);
+         var B2=ladoB*ladoB;
+         var A2=ladoA*ladoA;
+         var C2=ladoC*ladoC;
+        if(ladoA>=ladoB+ladoC || ladoB>=ladoA+ladoC || ladoC>=ladoB+ladoA){
+            console.log("NAO FORMA TRIANGULO");
+        }else{
+            if((A2==B2+C2)||(B2==A2+C2)||(C2==A2+B2)){
+            console.log("TRIANGULO RETANGULO");
+            }else if((A2>B2+C2)||(B2>A2+C2)||(C2>A2+B2)){
+            console.log("TRIANGULO OBTUSANGULO");
+            }else if((A2<B2+C2)||(B2<A2+C2)||(C2=A2+B2)){
+            console.log("TRIANGULO ACUTANGULO");
+            }        
+            if(ladoA==ladoB && ladoB==ladoC){
+            console.log("TRIANGULO EQUILATERO");
+            }else if(ladoA==ladoB || ladoA==ladoC || ladoB==ladoC){
+            console.log("TRIANGULO ISOSCELES");
+            }
+        }
+        
+        </script>
+
+
+    
+    </body>
+</html>

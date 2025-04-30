@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritmos</title>
+</head>
+    <body>
+        <script>
+        var linha = lines[0].split(" ");
+        var inicio=parseInt(linha[0]);
+        var fim=parseInt(linha[1]);
+         
+        if(inicio>fim){
+            var tempoAteMaiaNoite=24-inicio;
+            var tempoJogo=tempoAteMaiaNoite+fim;
+            console.log("O JOGO DUROU "+tempoJogo+" HORA(S)");
+        }else if(inicio===fim){
+            var tempoJogo=24;
+            console.log("O JOGO DUROU "+tempoJogo+" HORA(S)");
+        }else{
+            var tempoJogo=fim-inicio;
+            console.log("O JOGO DUROU "+tempoJogo+" HORA(S)");
+        }
+         
+
+       
+        
+       
+
+
+        
+        </script>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritmos</title>
+</head>
+    <body>
+        <script>
+        var linha = lines[0].split(" ");
+        var horaInicio=parseInt(linha[0]);
+        var minutoInicio=parseInt(linha[1]);
+        var horaFim=parseInt(linha[2]);
+        var minutoFim=parseInt(linha[3]);
+
+        var duracaoHoras=horaFim-horaInicio;
+        
+        if(minutoInicio>minutoFim){
+            var tempoAteHora=60-minutoInicio;
+            var tempoJogoMinuto=tempoAteHora+minutoFim;
+            var tempoAteMaiaNoite=24-horaInicio;
+            var tempoJogohora=tempoAteMaiaNoite+horaFim;
+            console.log("O JOGO DUROU "+tempoJogohora+" HORA(S) E "+tempoJogoMinuto+" MINUTO(S)");
+
+        }else if(horaInicio===horaFim){
+            var tempoJogohora=24;
+            var tempoJogoMinuto=0;
+            console.log("O JOGO DUROU "+tempoJogohora+" HORA(S) E "+tempoJogoMinuto+" MINUTO(S)");
+        }else if((horaInicio-horaFim)==1){
+            var tempoJogohora=0;
+            var tempoAteHora=60-minutoInicio;
+            var tempoJogoMinuto=tempoAteHora+minutoFim;
+            console.log("O JOGO DUROU "+tempoJogohora+" HORA(S) E "+tempoJogoMinuto+" MINUTO(S)");
+        }else{
+            var tempoJogohora=horaFim-horaInicio;
+            var tempoJogoMinuto=minutoFim-minutoInicio;
+            console.log("O JOGO DUROU "+tempoJogohora+" HORA(S) E "+tempoJogoMinuto+" MINUTO(S)");
+        }
+         
+
+       
+        
+       
+
+
+        
+        </script>
+
+
+    
+    </body>
+</html>

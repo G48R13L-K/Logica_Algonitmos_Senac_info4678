@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 41</title>
+</head>
+    <body>
+        Digite um número:
+        </br>
+       <input type="text"  id="numero" value=""></br>
+       <button onclick="contar()"> Clique aqui </button>
+        
+        <script>
+            function contar(){
+                var numero=parseInt(document.getElementById("numero").value);
+                var contagem="";
+                for(var x=0;x<=numero;x++){
+                     var contagem=contagem+x+" ";
+                }
+            
+                console.log(contagem+" Acabou!");
+            }
+                 
+        
+        </script>
+
+
+    
+    </body>
+</html>

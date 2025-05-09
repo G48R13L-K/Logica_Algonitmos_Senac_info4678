@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritmos</title>
+</head>
+    <body>
+        <script>
+            var x=parseInt(lines[0]);
+            var y=parseInt(lines[1]);
+            var somaImparx=0;
+            var somaImpary=0;
+            
+            while(x!==y){
+                if(x<=y){
+                 
+                    x++;
+                    if(x%2!==0){
+                        somaImparx=somaImparx+x;
+                    }
+
+                }else{
+                  
+                    y++;
+                    if(y%2!==0){
+                        somaImpary=somaImpary+y;
+                    }
+                }
+                
+            }
+            if(somaImparx>somaImpary){
+            console.log(somaImparx);
+            }else{
+                console.log(somaImpary);
+            }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+
+        
+
+       
+        
+       
+
+
+        
+        </script>
+
+
+    
+    </body>
+</html>

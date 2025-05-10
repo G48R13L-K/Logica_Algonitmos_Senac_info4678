@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 51</title>
+</head>
+    <body>
+      
+        <script>
+            var maiorPreco=0;
+            var menorPreco=1000000;
+
+            for(x=0;x<8;x++){
+                var precoLido=Number(prompt("Digite o preço do produto:",""));
+
+                if(precoLido>maiorPreco){
+                    maiorPreco=precoLido
+                }
+                 if(precoLido<menorPreco){
+                    menorPreco=precoLido
+                }
+            }
+         
+            console.log("Maior preço: "+maiorPreco)
+            console.log("Menor preço: "+menorPreco)
+        </script>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 54</title>
+</head>
+    <body>
+      
+        <script>
+            var mediaAltura=0;
+            var mais90kg=0;
+            var menos50kge160=0;
+            var mais100kg190=0
+
+            for(x=0;x<=6;x++){
+                var altrura=Number(prompt("Informe a altura:",""));
+                var peso=Number(prompt("Informe o peso:",""));
+
+                mediaAltura=mediaAltura+altrura;
+                if(peso>90){
+                    mais90kg++
+                }
+                if((altrura<160)&&(peso<50)){
+                    menos50kge160++
+                }
+                if((altrura>190)&&(peso>100)){
+                    mais100kg190++
+                }
+            }
+            mediaAltura=mediaAltura/7
+            var formatarALtura=mediaAltura/100
+
+            console.log("A média de altura do grupo foi de "+formatarALtura.toFixed(2)+"m.");
+            console.log(mais90kg+" pessoas pesam mais de 90Kg.");
+            console.log(menos50kge160+" pessoas pesam menos de 50Kg e possuem altura inferior à 1.60m");
+            console.log(mais100kg190+" pessoas pesam mais de 10Kg e possuem altura superior à 1.90.");
+           
+        </script>
+
+
+    
+    </body>
+</html>

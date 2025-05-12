@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 52</title>
+</head>
+    <body>
+      
+        <script>
+            var mediaAltura=0;
+            var maior18=0;
+            var menor5=0;
+            var maisVelho=0;
+
+            for(x=0;x<10;x++){
+                var idade=Number(prompt("Informe a idade:",""));
+                mediaAltura=mediaAltura+idade;
+                if(idade>18){
+                    maior18++;
+                }else if(idade<5){
+                    menor5++;
+                }
+                if(idade>maisVelho){
+                    maisVelho=idade;
+                }
+            }
+            mediaAltura=mediaAltura/10
+         
+            console.log("A média das idades é: "+mediaAltura.toFixed(2));
+            console.log(maior18+" possuem mais de 18 anos.");
+            console.log(menor5+" possuem menos de 5 anos.");
+            console.log("A maior idade informada foi "+maisVelho+".");
+        </script>
+
+
+    
+    </body>
+</html>

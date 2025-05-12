@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 53</title>
+</head>
+    <body>
+      
+        <script>
+            var mulheres=0;
+            var homens=0;
+            var mediaGrupo=0;
+            var mediaHomens=0;
+            var mulheresMais20=0;
+
+            for(x=0;x<5;x++){
+                var sexo=prompt("Informe o sexo:(h ou m)","");
+                var idade=Number(prompt("Digite a idade:",""));
+
+                
+                    if((sexo=="h")||(sexo=="H")){
+                        mediaHomens=mediaHomens+idade
+                        mediaGrupo=mediaGrupo+idade
+                        homens++
+                    }else{
+                        mulheres++
+                        mediaGrupo=mediaGrupo+idade
+                        if(idade>20){
+                            mulheresMais20++
+                        }
+                    }
+                }
+            
+            
+            mediaGrupo=mediaGrupo/5
+            mediaHomens=mediaHomens/homens
+
+         
+            console.log(mulheres+" mulheres foram cadastradas.");
+            console.log("A média de idade do grupo é "+mediaGrupo);
+            console.log("A média de idade dos homens é "+mediaHomens);
+            console.log(mulheresMais20+" mulheres tem mais de 20 anos.");
+        </script>
+
+
+    
+    </body>
+</html>

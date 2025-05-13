@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 55</title>
+</head>
+
+
+
+
+    <body>
+       
+        <script>
+            var numero=Math.floor((Math.random()*10)+1)
+            
+            for(x=1;x<5;x++){
+                var tentativa=Number(prompt("Tente acertar a o número:(tentativa "+x+")",""))
+                if(tentativa<numero){
+                    alert("Quase, o número sorteado é maior que "+tentativa)
+                }else if(tentativa>numero){
+                    alert("Quase, o número sorteado é menor que "+tentativa)
+                }else{
+                    alert("Acertou em cheio!!! Número sorteado é "+tentativa)
+                    x=4
+                }
+            }
+            alert("PARABÉNS VOCÊ ACERTOU!!!");
+
+  
+        </script>
+
+
+    
+    </body>
+</html>

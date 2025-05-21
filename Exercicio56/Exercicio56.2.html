@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 56</title>
+</head>
+    <body>
+      
+        <script>
+            //melhor maneira
+          var conta=0;
+          var i=0;  
+          while(i==0){
+                var valorDigitado=Number(prompt("Digite um valor:"));
+                if(valorDigitado!=1111){
+                    conta+=valorDigitado;
+                }else{
+                    i=1
+                }
+          }
+                  
+        console.log(conta+" Acabou!");
+        //
+        //
+        //
+        var conta=0;
+          var valorDigitadoDiferenteDe1111=true;  
+          while(valorDigitadoDiferenteDe1111){
+                var valorDigitado=Number(prompt("Digite um valor:"));
+                if(valorDigitado!=1111){
+                    conta+=valorDigitado;
+                }else{
+                    valorDigitadoDiferenteDe1111=false;
+                }
+          }
+                  
+
+        
+        console.log(conta+" Acabou!");
+        </script>
+
+
+    
+    </body>
+</html>

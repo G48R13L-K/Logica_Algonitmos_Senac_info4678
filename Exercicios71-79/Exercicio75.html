@@ -13,19 +13,23 @@
 
            var arraiDeNumeros = [];
            var valor=0;
-           var s1=1;
-           var s2=2;
-           arraiDeNumeros[0]=1;
-            for(var i=1;i<15;i++){   
+           var s1=0;
+           var s2=0;
+          
+            for(var i=0;i<15;i++){   
               
-              s1-=1
-              s2=s2-2
-              valor=arraiDeNumeros[s1]
-              
+              if(i<2){
+                arraiDeNumeros[i]=1
+              }else{
+              s1=i-1
+              s2=i-2
+              valor=arraiDeNumeros[s1]+arraiDeNumeros[s2]
+              arraiDeNumeros[i]=valor
+              }
               
          
           }
-             console.log(valor)
+             console.log(arraiDeNumeros)
         </script>
 
         

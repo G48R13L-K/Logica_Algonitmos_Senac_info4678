@@ -9,14 +9,14 @@
        
         <script>
           var arraiNumero=[];
-          var Multiplos="";
+          var Multiplos=" ";
           
           for (i=0;i<15;i++){
             var numeros=prompt("Digite um numero:")
             arraiNumero[i]=numeros
 
             if(numeros%10==0){
-              Multiplos=arraiNumero[i]+" "
+              Multiplos=Multiplos+i+" "
             }
           }
           console.log(arraiNumero)

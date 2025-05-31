@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+    <body>
+       
+        <script>
+         var arraiDeNumeros = [];
+
+for (var i = 0; i < 15; i++) {
+  arraiDeNumeros[i]=(Math.floor(Math.random() * 100) + 1)
+}
+
+
+
+var arraiDeNumerosOrganizado = [];
+
+while (arraiDeNumeros.length > 0) {
+  var menor = arraiDeNumeros[0];
+  var x = 0;
+
+  for (var i = 0; i < arraiDeNumeros.length; i++) {
+    if (arraiDeNumeros[i] > menor) {
+      menor = arraiDeNumeros[i];
+      x = i;
+    }
+  }
+  arraiDeNumerosOrganizado[i]=menor;
+  arraiDeNumeros.splice(x, 1);
+}
+
+console.log("Array ordenado:", arraiDeNumerosOrganizado);
+
+          
+          
+       
+        
+        </script>
+
+        
+
+
+    
+    </body>
+</html>
